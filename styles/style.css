@@ -57,17 +57,18 @@
   letter-spacing: 0;
 }
 
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0 / 0.5);
+    inset: 0;
+    z-index: -1;
+}
+
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
-}
-
-.overlay {
-    position: absolute;
-    background-color: rgba(0, 0, 0 / .4);
-    inset: 0;
-    z-index: -1;
-    
+  position: relative;
+  z-index: 1;
 }
 
 .cover_title {
@@ -79,12 +80,11 @@
 }
 
 .aligned-text {
-display: block;
-color: white;
-padding-left: 50px;
-padding-top: 174px;
+  display: block;
+  color: white;
+  padding-left: 50px;
+  padding-top: 174px;
 }
-
 
 .aligned-text_center {
   text-align: center;
@@ -97,9 +97,8 @@ padding-top: 174px;
   text-align: right;
   line-height: 1;
   padding-right: 50px;
-padding-top: 19px;
+  padding-top: 19px;
 }
-
 
 .letter-spacing-extended {
   letter-spacing: 0.6em;
@@ -110,11 +109,11 @@ padding-top: 19px;
 }
 
 .cover_description-text {
-    font-family: Raleway;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-transform: uppercase;
-    color: white;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+  color: white;
 }
