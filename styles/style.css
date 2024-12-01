@@ -1,61 +1,120 @@
 /* место для вашего кода */
 .header {
-    display: grid;
-    
-    padding: 92px 50px;
-    grid-template-columns: 1fr 148px 1fr;
-    align-items: center;
-    font-family: Raleway;
-
+  display: grid;
+  padding: 92px 50px;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  font-family: Raleway;
 }
 
 .header_menu {
-    
 }
 
 .header_links-list {
-    display: flex;
-    gap: 32px;
-    white-space: nowrap;
+  display: flex;
+  gap: 32px;
+  white-space: nowrap;
 }
 
 .header__links-list-item {
-    list-style-type: circle;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.13px;
-    letter-spacing: 0.01em;
+  list-style-type: circle;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  letter-spacing: 0.01em;
 }
 
 .header__links-list-item_no-bullet {
-     list-style: none; 
-    text-decoration: none;
-    letter-spacing: 0;
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 
 .header_logo {
-    width: min-content;
+  width: min-content;
 }
 
 .header_logo-image {
-    width: 148px;
-    height: 105px;
+  width: 148px;
+  height: 105px;
 }
 
 .header_address {
-    width: 240px;
-    text-underline-offset: 4px;
-    justify-self: right;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24.3px;
-    letter-spacing: 0.01em;
+  width: 240px;
+  text-underline-offset: 4px;
+  justify-self: right;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0.01em;
 }
 
 .address {
-    text-decoration: none;
-    font-style: normal;
-    letter-spacing: 0;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0 / .4);
+    inset: 0;
+    z-index: -1;
+    
+}
+
+.cover_title {
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text {
+display: block;
+color: white;
+padding-left: 50px;
+padding-top: 174px;
+}
+
+
+.aligned-text_center {
+  text-align: center;
+  line-height: 1;
+  padding-top: 27px;
+  padding-right: 49px;
+}
+
+.aligned-text_right {
+  text-align: right;
+  line-height: 1;
+  padding-right: 50px;
+padding-top: 19px;
+}
+
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0em;
+}
+
+.cover_description-text {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
 }
