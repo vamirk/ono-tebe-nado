@@ -7,9 +7,6 @@
   font-family: Raleway;
 }
 
-.header_menu {
-}
-
 .header_links-list {
   display: flex;
   gap: 32px;
@@ -156,7 +153,7 @@
   margin-top: 27px;
   gap: 25px;
   padding: 0 24px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .lots_card-list-item {
@@ -206,6 +203,11 @@
   text-align: left;
 }
 
+.card-text-letter-spacing {
+  letter-spacing: 0.13em;
+  text-align: left;
+}
+
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
@@ -219,12 +221,117 @@
 }
 
 .lots__look-more-link {
-font-family: Raleway;
-font-size: 20px;
-font-weight: 400;
-line-height: 23.48px;
-text-align: left;
-text-decoration: underline;
-padding-left: 64px;
-text-underline-offset: 4px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  text-align: left;
+  text-decoration: underline;
+  padding-left: 64px;
+  text-underline-offset: 4px;
+}
+
+.about {
+  margin-top: 182px;
+  margin-left: 19px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 17px;
+  padding-right: 24px;
+}
+
+.about_logo {
+  display: grid;
+  background-color: black;
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  place-items: center;
+  justify-self: center;
+}
+
+.about_logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about_title {
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-transform: uppercase;
+  padding-top: 102px;
+  padding-bottom: 100px;
+}
+
+.about_text {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.about_text-padding-bottom {
+  padding-bottom: 24px;
+}
+
+.about_text-letter-spacing1 {
+  letter-spacing: 0.02em;
+}
+
+.about_text-letter-spacing2 {
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.about_text-letter-spacing3 {
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.footer {
+  margin: 180px 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1000px;
+  padding-bottom: 88px;
+}
+
+.footer__address {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  letter-spacing: 0.01em;
+  text-underline-offset: 4px;
+  justify-self: left;
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+.footer__menu-list-item {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  text-align: center;
+  text-underline-offset: 4px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 93px;
+}
+
+.footer__social-link {
+  width: 48px;
 }
