@@ -283,20 +283,20 @@
 
 .about_text-letter-spacing2 {
   letter-spacing: -0.01em;
-  text-align: left;
 }
 
 .about_text-letter-spacing3 {
   letter-spacing: 0.03em;
-  text-align: left;
+}
+
+.about_text-letter-spacing4 {
+  letter-spacing: 0.04em;
 }
 
 .footer {
   margin: 180px 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1000px;
-  padding-bottom: 88px;
 }
 
 .footer__address {
