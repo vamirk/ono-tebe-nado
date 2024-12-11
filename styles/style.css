@@ -1,10 +1,14 @@
 /* место для вашего кода */
+a {
+  text-decoration: none;
+}
+
 .header {
   display: grid;
   padding: 92px 50px;
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
 }
 
 .header_links-list {
@@ -38,25 +42,33 @@
   height: 105px;
 }
 
-.header_address {
+.address {
+  font-family: "Raleway", sans-serif;
   width: 240px;
-  text-underline-offset: 4px;
-  justify-self: right;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
   letter-spacing: 0.01em;
+  font-style: normal;
 }
 
-.address {
-  text-decoration: none;
-  font-style: normal;
+.address a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header_address {
+  justify-self: end;
+}
+
+.address_street {
   letter-spacing: 0;
+  text-decoration: none;
 }
 
 .overlay {
   position: absolute;
-  background-color: rgba(0 0 0 / 0.5);
+  background-color: rgba(0 0 0 / 0.4);
   top: 0;
   right: 0;
   bottom: 0;
@@ -69,12 +81,13 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  height: 757px;
+  min-height: 757px;
   padding-right: 50px;
+  background-position: center;
 }
 
 .cover_title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 100px;
   font-weight: 700;
   line-height: 100px;
@@ -109,12 +122,14 @@
 }
 
 .cover_description {
+  display: flex;
+  justify-content: space-between;
   padding-top: 136px;
   padding-left: 78px;
 }
 
 .cover_description-text {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -122,6 +137,7 @@
   word-spacing: 0.9em;
   text-transform: uppercase;
   color: white;
+  align-self: center;
   padding-right: 76px;
 }
 
@@ -130,7 +146,7 @@
 }
 
 .bet-button {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 25.83px;
@@ -138,7 +154,7 @@
   text-transform: uppercase;
   color: white;
   background: transparent;
-  border: 1px solid;
+  border: 1px solid currentColor;
   width: 256px;
   height: 51px;
 }
@@ -154,10 +170,11 @@
   gap: 25px;
   padding: 0 24px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .lots_card-list-item {
-  flex-basis: 100%;
+  flex: 1 1 0%;
 }
 
 .card {
@@ -174,7 +191,7 @@
 }
 
 .lots_heading {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
@@ -184,7 +201,7 @@
 }
 
 .card-title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
@@ -196,7 +213,7 @@
 }
 
 .card-text {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -221,7 +238,7 @@
 }
 
 .lots__look-more-link {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23.48px;
@@ -256,7 +273,7 @@
 }
 
 .about_title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
@@ -266,7 +283,7 @@
 }
 
 .about_text {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -297,16 +314,7 @@
   margin: 180px 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer__address {
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24.3px;
-  letter-spacing: 0.01em;
-  text-underline-offset: 4px;
-  justify-self: left;
+  padding-bottom: 88px;
 }
 
 .footer__menu {
@@ -318,18 +326,23 @@
 }
 
 .footer__menu-list-item {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
   text-align: center;
+  text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.footer__menu-link-active {
+  text-decoration: none;
 }
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
-  margin-left: 93px;
+  justify-self: right;
+  gap: 48px;
 }
 
 .footer__social-link {
